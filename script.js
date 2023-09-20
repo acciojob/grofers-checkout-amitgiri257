@@ -16,7 +16,7 @@ priceElements.forEach((priceElement) => {
 
 const totalRow = document.createElement("tr");
 totalRow.innerHTML = `
-  <td colspan="2">Total Price</td>
+  <td >Ans</td>
   <td>${totalPrice.toFixed(2)}</td>
 `;
 
