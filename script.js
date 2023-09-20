@@ -4,6 +4,26 @@ document.body.appendChild(getSumBtn);
 
 const getSum = () => {
 //Add your code here
+	// Select all elements with the class "prices"
+const priceElements = document.querySelectorAll(".price");
+
+let totalPrice = 0;
+
+priceElements.forEach((priceElement) => {
+  const price = parseFloat(priceElement.textContent);
+  totalPrice += price;
+});
+
+const totalRow = document.createElement("tr");
+totalRow.innerHTML = `
+  <td colspan="2">Total Price</td>
+  <td>${totalPrice.toFixed(2)}</td>
+`;
+
+// Append the total row to the table
+const table = document.querySelector("table");
+table.appendChild(totalRow);
+
   
 };
 
