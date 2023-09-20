@@ -4,7 +4,7 @@ document.body.appendChild(getSumBtn);
 
 const getSum = () => {
 //Add your code here
-	// Select all elements with the class "prices"
+	
 const priceElements = document.querySelectorAll(".price");
 
 let totalPrice = 0;
@@ -16,7 +16,7 @@ priceElements.forEach((priceElement) => {
 
 const totalRow = document.createElement("tr");
 totalRow.innerHTML = `
-  <td >Ans</td>
+  <td id="ans">Ans</td>
   <td>${totalPrice.toFixed(2)}</td>
 `;
 
