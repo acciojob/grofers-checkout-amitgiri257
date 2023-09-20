@@ -15,6 +15,7 @@ priceElements.forEach((priceElement) => {
 });
 
 const totalRow = document.createElement("tr");
+	totalRow.className="ans"
 totalRow.innerHTML = `
   <td id="ans">Ans</td>
   <td id="ans">${totalPrice.toFixed(2)}</td>
