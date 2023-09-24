@@ -15,7 +15,7 @@ priceElements.forEach((priceElement) => {
 });
 
 const totalRow = document.createElement("tr");
-	totalRow.className="ans"
+	totalRow.id="ans"
 totalRow.innerHTML = `
   <td id="ans">Ans</td>
   <td id="ans">${totalPrice}</td>
