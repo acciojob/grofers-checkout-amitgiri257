@@ -18,7 +18,7 @@ const totalRow = document.createElement("tr");
 	totalRow.className="ans"
 totalRow.innerHTML = `
   <td id="ans">Ans</td>
-  <td id="ans">${totalPrice.toFixed(2)}</td>
+  <td id="ans">${totalPrice}</td>
 `;
 
 // Append the total row to the table
